@@ -151,7 +151,7 @@
 </div>
 
 <div class="hero">
-  <h1>INTERACTIVE <em>STUDY</em> MODULES</h1>
+  <h1>DOS <em>UNBLOCKED</em> GAMES 2.0</h1>
   <p>Engage your brain &#8212; all platforms, all speeds</p>
 </div>
 
@@ -164,6 +164,8 @@
   <button class="filter-btn" onclick="setFilter('racing', this)">Racing</button>
   <button class="filter-btn" onclick="setFilter('shooter', this)">Shooter</button>
   <button class="filter-btn" onclick="setFilter('13+', this)">13+</button>
+  <button class="filter-btn" onclick="setFilter('idle', this)">Idle</button>
+  <button class="filter-btn" onclick="setFilter('gore', this)">🩸 Gore</button>
 </div>
 
 <div class="section" id="games-section">
@@ -369,6 +371,182 @@ const games = [
   { name: "Age of War", desc: "Evolving strategy war", emoji: "&#9876;", url: "https://www.crazygames.com/game/age-of-war", cat: "action", age: "13+", hot: false },
   { name: "Fancy Pants", desc: "Smooth stickman platformer", emoji: "&#128310;", url: "https://www.crazygames.com/game/fancy-pants-adventures", cat: "action", age: "all", hot: false },
   { name: "Temple Run 2", desc: "Endless jungle escape run", emoji: "&#127939;", url: "https://www.crazygames.com/game/temple-run-2", cat: "racing", age: "all", hot: false },
+
+  // IDLE GAMES
+  { name: "Adventure Capitalist", desc: "Build a business empire from scratch", emoji: "&#128176;", url: "https://www.crazygames.com/game/adventure-capitalist", cat: "idle", age: "all", hot: true },
+  { name: "Idle Breakout", desc: "Break bricks with auto-upgrading balls", emoji: "&#127921;", url: "https://www.crazygames.com/game/idle-breakout", cat: "idle", age: "all", hot: true },
+  { name: "Idle Dice", desc: "Roll dice and build passive income", emoji: "&#127922;", url: "https://www.crazygames.com/game/idle-dice", cat: "idle", age: "all", hot: false },
+  { name: "Idle Mining Empire", desc: "Automate a mining operation", emoji: "&#9935;", url: "https://www.crazygames.com/game/idle-mining-empire", cat: "idle", age: "all", hot: false },
+  { name: "Idle Startup Tycoon", desc: "Grow a tech company from zero", emoji: "&#128187;", url: "https://www.crazygames.com/game/idle-startup-tycoon", cat: "idle", age: "all", hot: false },
+  { name: "Idle Arks", desc: "Build an ark and survive the flood", emoji: "&#9972;", url: "https://www.crazygames.com/game/idle-arks", cat: "idle", age: "all", hot: true },
+  { name: "Idle Farming Business", desc: "Grow crops and sell for profit", emoji: "&#127807;", url: "https://www.crazygames.com/game/idle-farming-business", cat: "idle", age: "all", hot: false },
+  { name: "Idle Miner Tycoon", desc: "Mine resources and upgrade shafts", emoji: "&#128295;", url: "https://www.crazygames.com/game/idle-miner", cat: "idle", age: "all", hot: false },
+  { name: "Idle Restaurant", desc: "Build the ultimate food empire", emoji: "&#127829;", url: "https://www.crazygames.com/game/idle-restaurant", cat: "idle", age: "all", hot: false },
+  { name: "Antimatter Dimensions", desc: "Insane prestige idle math game", emoji: "&#9881;", url: "https://antimatter-dimensions.net", cat: "idle", age: "all", hot: true },
+  { name: "NGU Idle", desc: "Deep RPG idle with humor", emoji: "&#128170;", url: "https://www.crazygames.com/game/ngu-idle", cat: "idle", age: "all", hot: false },
+  { name: "Clicker Heroes", desc: "Click monsters and hire heroes", emoji: "&#9876;", url: "https://www.crazygames.com/game/clicker-heroes", cat: "idle", age: "all", hot: true },
+  { name: "Idle Web Tycoon", desc: "Build websites and earn ad money", emoji: "&#127760;", url: "https://www.crazygames.com/game/idle-web-tycoon", cat: "idle", age: "all", hot: false },
+  { name: "Idle Ants", desc: "Grow an ant colony to destroy things", emoji: "&#128028;", url: "https://www.crazygames.com/game/idle-ants", cat: "idle", age: "all", hot: true },
+  { name: "Tap Tap Shots", desc: "Idle basketball shooting game", emoji: "&#127936;", url: "https://www.crazygames.com/game/tap-tap-shots", cat: "idle", age: "all", hot: false },
+  { name: "Idle Civilization", desc: "Build humanity from stone age", emoji: "&#127968;", url: "https://www.crazygames.com/game/idle-civilization", cat: "idle", age: "all", hot: false },
+  { name: "Idle Planet Miner", desc: "Mine entire planets for resources", emoji: "&#127756;", url: "https://www.crazygames.com/game/idle-planet-miner", cat: "idle", age: "all", hot: false },
+  { name: "Idle Jungle", desc: "Grow a jungle ecosystem passively", emoji: "&#127807;", url: "https://www.crazygames.com/game/idle-jungle", cat: "idle", age: "all", hot: false },
+  { name: "Idle Supermarket", desc: "Run a supermarket empire", emoji: "&#128717;", url: "https://www.crazygames.com/game/idle-supermarket", cat: "idle", age: "all", hot: false },
+  { name: "Cell to Singularity", desc: "Evolve life from bacteria to AI", emoji: "&#129664;", url: "https://www.crazygames.com/game/cell-to-singularity", cat: "idle", age: "all", hot: true },
+
+  // GORY / MATURE ACTION
+  { name: "Zombie Derby 2", desc: "Drive through zombie hordes, splatter everything", emoji: "&#128663;", url: "https://www.crazygames.com/game/zombie-derby-2", cat: "gore", age: "13+", hot: true },
+  { name: "Boxhead Zombie Wars", desc: "Brutal top-down zombie slaughter", emoji: "&#128296;", url: "https://www.crazygames.com/game/boxhead-zombie-wars", cat: "gore", age: "13+", hot: false },
+  { name: "The Last Stand 2", desc: "Survive zombie sieges night by night", emoji: "&#128308;", url: "https://www.crazygames.com/game/the-last-stand-2", cat: "gore", age: "13+", hot: true },
+  { name: "Endless Zombie Rampage 2", desc: "Mow down endless zombie waves", emoji: "&#129503;", url: "https://www.crazygames.com/game/endless-zombie-rampage-2", cat: "gore", age: "13+", hot: false },
+  { name: "Raze 3", desc: "Sci-fi arena shooter with brutal kills", emoji: "&#128126;", url: "https://www.crazygames.com/game/raze-3", cat: "gore", age: "13+", hot: true },
+  { name: "Crusader Defense", desc: "Medieval gore tower defense", emoji: "&#128481;", url: "https://www.crazygames.com/game/crusader-defense", cat: "gore", age: "13+", hot: false },
+  { name: "Infectonator", desc: "Infect cities and watch chaos spread", emoji: "&#129440;", url: "https://www.crazygames.com/game/infectonator", cat: "gore", age: "13+", hot: true },
+  { name: "Sift Heads World", desc: "Hitman series with brutal takedowns", emoji: "&#127993;", url: "https://www.crazygames.com/game/sift-heads-world", cat: "gore", age: "13+", hot: false },
+  { name: "Warfare 1917", desc: "WW1 trench warfare with casualties", emoji: "&#129686;", url: "https://www.crazygames.com/game/warfare-1917", cat: "gore", age: "13+", hot: true },
+  { name: "Warfare 1944", desc: "WW2 squad combat, brutal battles", emoji: "&#128116;", url: "https://www.crazygames.com/game/warfare-1944", cat: "gore", age: "13+", hot: true },
+  { name: "Age of War 2", desc: "Evolving warfare with bloody combat", emoji: "&#9876;", url: "https://www.crazygames.com/game/age-of-war-2", cat: "gore", age: "13+", hot: false },
+  { name: "On The Run", desc: "Sniper assassination on the run", emoji: "&#127919;", url: "https://www.crazygames.com/game/on-the-run", cat: "gore", age: "13+", hot: false },
+  { name: "Sniper Team 2", desc: "Multi-level sniper elimination game", emoji: "&#128299;", url: "https://www.crazygames.com/game/sniper-team-2", cat: "gore", age: "13+", hot: true },
+  { name: "Commando 2", desc: "Run and gun commando game", emoji: "&#128165;", url: "https://www.crazygames.com/game/commando-2", cat: "gore", age: "13+", hot: false },
+  { name: "Siege Hero", desc: "Catapult physics siege destruction", emoji: "&#127984;", url: "https://www.crazygames.com/game/siege-hero", cat: "gore", age: "13+", hot: false },
+  { name: "Zombocalypse 2", desc: "Helicopter drops weapons into zombie apocalypse", emoji: "&#128641;", url: "https://www.crazygames.com/game/zombocalypse-2", cat: "gore", age: "13+", hot: true },
+  { name: "Dead Frontier 2", desc: "Zombie survival horror shooter", emoji: "&#128128;", url: "https://www.crazygames.com/game/dead-frontier-2", cat: "gore", age: "13+", hot: true },
+  { name: "Earn to Die", desc: "Original zombie car crusher", emoji: "&#128664;", url: "https://www.crazygames.com/game/earn-to-die", cat: "gore", age: "13+", hot: false },
+  { name: "The Last Stand Union City", desc: "Zombie RPG survival with story", emoji: "&#127978;", url: "https://www.crazygames.com/game/the-last-stand-union-city", cat: "gore", age: "13+", hot: true },
+  { name: "GoreBox", desc: "Extreme physics sandbox carnage", emoji: "&#128169;", url: "https://www.crazygames.com/game/gorebox", cat: "gore", age: "13+", hot: true },
+
+  // MORE ACTION / SHOOTERS
+  { name: "Heli Attack 3", desc: "Helicopter shooter with wild weapons", emoji: "&#128641;", url: "https://www.crazygames.com/game/heli-attack-3", cat: "shooter", age: "13+", hot: false },
+  { name: "Swords and Sandals 2", desc: "Gladiator arena RPG combat", emoji: "&#129505;", url: "https://www.crazygames.com/game/swords-and-sandals-2", cat: "action", age: "13+", hot: true },
+  { name: "Swords and Sandals 3", desc: "Epic gladiator campaign part 3", emoji: "&#128481;", url: "https://www.crazygames.com/game/swords-and-sandals-3", cat: "action", age: "13+", hot: false },
+  { name: "Bloons Tower Defense 6", desc: "Ultimate balloon popping defense", emoji: "&#127880;", url: "https://www.crazygames.com/game/bloons-tower-defense-6", cat: "puzzle", age: "all", hot: true },
+  { name: "Bullet Rush", desc: "Nonstop bullet hell shooter", emoji: "&#128165;", url: "https://www.crazygames.com/game/bullet-rush", cat: "shooter", age: "13+", hot: false },
+  { name: "Superfighters", desc: "2D brawler with weapons and chaos", emoji: "&#129354;", url: "https://www.crazygames.com/game/superfighters", cat: "action", age: "13+", hot: true },
+  { name: "Superfighters Deluxe", desc: "Enhanced chaos brawler sequel", emoji: "&#128165;", url: "https://www.crazygames.com/game/superfighters-deluxe", cat: "action", age: "13+", hot: true },
+  { name: "Thing Thing Arena 3", desc: "Intense arena shooter with upgrades", emoji: "&#128296;", url: "https://www.crazygames.com/game/thing-thing-arena-3", cat: "shooter", age: "13+", hot: false },
+  { name: "Alien Hominid", desc: "Cartoon alien run and gun classic", emoji: "&#128125;", url: "https://www.crazygames.com/game/alien-hominid", cat: "action", age: "13+", hot: true },
+  { name: "Plazma Burst 2", desc: "Sci-fi shooter with time mechanics", emoji: "&#128302;", url: "https://www.crazygames.com/game/plazma-burst-2", cat: "shooter", age: "13+", hot: true },
+  { name: "Madness Project Nexus", desc: "Madness Combat arena mayhem", emoji: "&#129354;", url: "https://www.crazygames.com/game/madness-project-nexus", cat: "gore", age: "13+", hot: true },
+  { name: "Storm the House 3", desc: "Defend your house from waves", emoji: "&#127968;", url: "https://www.crazygames.com/game/storm-the-house-3", cat: "shooter", age: "13+", hot: false },
+  { name: "Potty Racers 4", desc: "Upgraded porta-potty launcher", emoji: "&#128704;", url: "https://www.crazygames.com/game/potty-racers-4", cat: "racing", age: "all", hot: false },
+  { name: "Flight", desc: "Paper airplane distance launcher", emoji: "&#9992;", url: "https://www.crazygames.com/game/flight", cat: "action", age: "all", hot: false },
+  { name: "Toss the Turtle", desc: "Launch a turtle as far as possible", emoji: "&#128034;", url: "https://www.crazygames.com/game/toss-the-turtle", cat: "action", age: "13+", hot: true },
+  { name: "Penguin Diner 2", desc: "Serve penguins in a diner rush", emoji: "&#129419;", url: "https://www.crazygames.com/game/penguin-diner-2", cat: "puzzle", age: "all", hot: false },
+  { name: "Papa Louie 2", desc: "Platform adventure in food world", emoji: "&#127828;", url: "https://www.crazygames.com/game/papa-louie-2", cat: "action", age: "all", hot: false },
+  { name: "Papa Louie 3", desc: "Food world platformer continues", emoji: "&#127829;", url: "https://www.crazygames.com/game/papa-louie-3", cat: "action", age: "all", hot: false },
+  { name: "Ninja Action", desc: "Stealthy ninja slash-em-up", emoji: "&#129355;", url: "https://www.crazygames.com/game/ninja-action", cat: "action", age: "13+", hot: false },
+  { name: "Shadow of the Ninja", desc: "Dark ninja platformer combat", emoji: "&#127981;", url: "https://www.crazygames.com/game/shadow-of-the-ninja", cat: "action", age: "13+", hot: false },
+  { name: "Ninja Painter 2", desc: "Paint walls while avoiding guards", emoji: "&#127912;", url: "https://www.crazygames.com/game/ninja-painter-2", cat: "puzzle", age: "all", hot: false },
+  { name: "Red Ball 4", desc: "Roll and jump through levels", emoji: "&#128308;", url: "https://www.crazygames.com/game/red-ball-4", cat: "action", age: "all", hot: false },
+  { name: "Wheely 8", desc: "Help Wheely the car solve puzzles", emoji: "&#128664;", url: "https://www.crazygames.com/game/wheely-8", cat: "puzzle", age: "all", hot: false },
+  { name: "Tiny Fishing", desc: "Simple relaxing fishing clicker", emoji: "&#127907;", url: "https://www.crazygames.com/game/tiny-fishing", cat: "idle", age: "all", hot: true },
+  { name: "Idle Fishing", desc: "Automate your fishing empire", emoji: "&#129516;", url: "https://www.crazygames.com/game/idle-fishing", cat: "idle", age: "all", hot: false },
+  { name: "Cut the Rope", desc: "Feed candy to cute monster Om Nom", emoji: "&#129354;", url: "https://www.crazygames.com/game/cut-the-rope", cat: "puzzle", age: "all", hot: false },
+  { name: "Where is Cat", desc: "Find the hidden cat in each level", emoji: "&#128049;", url: "https://www.crazygames.com/game/where-is-cat", cat: "puzzle", age: "all", hot: false },
+  { name: "Snail Bob 2", desc: "Guide snail Bob through puzzles", emoji: "&#128012;", url: "https://www.crazygames.com/game/snail-bob-2", cat: "puzzle", age: "all", hot: false },
+  { name: "Snail Bob 8", desc: "Space adventure for Snail Bob", emoji: "&#128640;", url: "https://www.crazygames.com/game/snail-bob-8", cat: "puzzle", age: "all", hot: false },
+  { name: "Adam and Eve 5", desc: "Cave man puzzle adventure", emoji: "&#129489;", url: "https://www.crazygames.com/game/adam-and-eve-5", cat: "puzzle", age: "all", hot: false },
+  { name: "Amgel Easy Room Escape", desc: "Find clues and escape the room", emoji: "&#128477;", url: "https://www.crazygames.com/game/amgel-easy-room-escape", cat: "puzzle", age: "all", hot: false },
+  { name: "Civiballs", desc: "Cut chains to drop balls in urns", emoji: "&#9967;", url: "https://www.crazygames.com/game/civiballs", cat: "puzzle", age: "all", hot: false },
+  { name: "Raft Wars 2", desc: "Watergun battles on a raft sequel", emoji: "&#127757;", url: "https://www.crazygames.com/game/raft-wars-2", cat: "action", age: "all", hot: true },
+  { name: "Raft Wars", desc: "Original raft watergun battle game", emoji: "&#128705;", url: "https://www.crazygames.com/game/raft-wars", cat: "action", age: "all", hot: false },
+  { name: "Ninjago", desc: "LEGO ninjago fighting game", emoji: "&#129354;", url: "https://www.crazygames.com/game/ninjago", cat: "action", age: "all", hot: false },
+  { name: "Stick War Legacy", desc: "Command stick figure armies", emoji: "&#128481;", url: "https://www.crazygames.com/game/stick-war-legacy", cat: "action", age: "13+", hot: true },
+  { name: "Stick War 3", desc: "Huge stickman strategy war game", emoji: "&#9876;", url: "https://www.crazygames.com/game/stick-war-3", cat: "action", age: "13+", hot: true },
+  { name: "Stick Empires", desc: "Real-time stickman empire building", emoji: "&#127984;", url: "https://www.crazygames.com/game/stick-empires", cat: "action", age: "13+", hot: false },
+  { name: "Boxhead The Rooms", desc: "Classic zombie shooter rooms", emoji: "&#128169;", url: "https://www.crazygames.com/game/boxhead-the-rooms", cat: "gore", age: "13+", hot: false },
+  { name: "Turret Defense", desc: "Build turrets and hold the line", emoji: "&#128302;", url: "https://www.crazygames.com/game/turret-defense", cat: "puzzle", age: "all", hot: false },
+  { name: "Epic Battle Fantasy 5", desc: "Deep JRPG browser adventure", emoji: "&#129409;", url: "https://www.crazygames.com/game/epic-battle-fantasy-5", cat: "action", age: "13+", hot: true },
+  { name: "Epic Battle Fantasy 4", desc: "JRPG battles with anime style", emoji: "&#128481;", url: "https://www.crazygames.com/game/epic-battle-fantasy-4", cat: "action", age: "13+", hot: false },
+  { name: "Sonny", desc: "Zombie RPG with deep strategy", emoji: "&#129503;", url: "https://www.crazygames.com/game/sonny", cat: "action", age: "13+", hot: true },
+  { name: "Sonny 2", desc: "Darker RPG zombie sequel", emoji: "&#128128;", url: "https://www.crazygames.com/game/sonny-2", cat: "action", age: "13+", hot: false },
+  { name: "The Bully", desc: "Destroy bullies with upgrades", emoji: "&#128293;", url: "https://www.crazygames.com/game/the-bully", cat: "action", age: "13+", hot: false },
+  { name: "Rage 3", desc: "Beat em up punch fest action", emoji: "&#128165;", url: "https://www.crazygames.com/game/rage-3", cat: "gore", age: "13+", hot: false },
+  { name: "Humaliens Battle", desc: "Humans vs aliens wave defense", emoji: "&#128125;", url: "https://www.crazygames.com/game/humaliens-battle", cat: "shooter", age: "13+", hot: false },
+  { name: "Canyon Defense", desc: "Defend the canyon from invaders", emoji: "&#127966;", url: "https://www.crazygames.com/game/canyon-defense", cat: "puzzle", age: "all", hot: false },
+  { name: "Balloon Tower Defense 4", desc: "Classic BTD4 balloon mayhem", emoji: "&#127879;", url: "https://www.crazygames.com/game/bloons-tower-defense-4", cat: "puzzle", age: "all", hot: false },
+  { name: "GemCraft", desc: "Deep tower defense gem crafting", emoji: "&#128142;", url: "https://www.crazygames.com/game/gemcraft", cat: "puzzle", age: "all", hot: true },
+  { name: "Protector IV", desc: "Fantasy RPG tower defense", emoji: "&#129424;", url: "https://www.crazygames.com/game/protector-iv", cat: "puzzle", age: "all", hot: false },
+  { name: "Orbital Defense", desc: "Defend earth from asteroid waves", emoji: "&#127756;", url: "https://www.crazygames.com/game/orbital-defense", cat: "shooter", age: "all", hot: false },
+  { name: "Monster Truck Nitro 2", desc: "Insane monster truck stunts", emoji: "&#128665;", url: "https://www.crazygames.com/game/monster-truck-nitro-2", cat: "racing", age: "all", hot: false },
+  { name: "Burnout Drift", desc: "Satisfying burnout drift sim", emoji: "&#128168;", url: "https://www.crazygames.com/game/burnout-drift", cat: "racing", age: "all", hot: true },
+  { name: "City Car Driving", desc: "Realistic city driving sim", emoji: "&#128663;", url: "https://www.crazygames.com/game/city-car-driving", cat: "racing", age: "all", hot: false },
+  { name: "Moto Road Rash 3D", desc: "Highway motorcycle dodging", emoji: "&#127949;", url: "https://www.crazygames.com/game/moto-road-rash-3d", cat: "racing", age: "all", hot: false },
+  { name: "Racing Limits", desc: "Fast lane endless highway racer", emoji: "&#128661;", url: "https://www.crazygames.com/game/racing-limits", cat: "racing", age: "all", hot: true },
+  { name: "Drag Racing 3D", desc: "Quarter mile drag race challenger", emoji: "&#127937;", url: "https://www.crazygames.com/game/drag-racing-3d", cat: "racing", age: "all", hot: false },
+  { name: "Bike Mania 2", desc: "Tricky bike balance platformer", emoji: "&#128690;", url: "https://www.crazygames.com/game/bike-mania-2", cat: "racing", age: "all", hot: false },
+  { name: "Trial Bike Epic Stunts", desc: "Extreme trial bike obstacle course", emoji: "&#129313;", url: "https://www.crazygames.com/game/trial-bike-epic-stunts", cat: "racing", age: "all", hot: false },
+  { name: "Drive or Die", desc: "Post apocalypse survival racing", emoji: "&#128128;", url: "https://www.crazygames.com/game/drive-or-die", cat: "racing", age: "13+", hot: true },
+  { name: "Mad Truckers", desc: "Highway truck destruction derby", emoji: "&#128666;", url: "https://www.crazygames.com/game/mad-truckers", cat: "racing", age: "13+", hot: false },
+  { name: "Crash of Cars", desc: "Real-time multiplayer car battle", emoji: "&#128165;", url: "https://www.crazygames.com/game/crash-of-cars", cat: "racing", age: "all", hot: true },
+  { name: "Traffic Jam 3D", desc: "Weave through insane traffic", emoji: "&#128664;", url: "https://www.crazygames.com/game/traffic-jam-3d", cat: "racing", age: "all", hot: false },
+  { name: "Super Bikes", desc: "Fast superbike time trials", emoji: "&#127949;", url: "https://www.crazygames.com/game/super-bikes", cat: "racing", age: "all", hot: false },
+  { name: "Ultimate Stunts", desc: "Crazy car stunt arena", emoji: "&#127932;", url: "https://www.crazygames.com/game/ultimate-stunts", cat: "racing", age: "all", hot: false },
+  { name: "Turbo Moto Racer", desc: "Endless turbo motorcycle racer", emoji: "&#128296;", url: "https://www.crazygames.com/game/turbo-moto-racer", cat: "racing", age: "all", hot: false },
+  { name: "Blocky Farm Racing", desc: "Cartoon farm vehicle racing", emoji: "&#128640;", url: "https://www.crazygames.com/game/blocky-farm-racing", cat: "racing", age: "all", hot: false },
+
+  // MORE PUZZLE / CASUAL
+  { name: "Bloxorz", desc: "Roll the block to the hole", emoji: "&#129521;", url: "https://www.crazygames.com/game/bloxorz", cat: "puzzle", age: "all", hot: true },
+  { name: "Light Bot", desc: "Program a robot with code commands", emoji: "&#129302;", url: "https://www.crazygames.com/game/light-bot", cat: "puzzle", age: "all", hot: false },
+  { name: "Hex FRVR", desc: "Relaxing hexagon block puzzle", emoji: "&#128311;", url: "https://www.crazygames.com/game/hex-frvr", cat: "puzzle", age: "all", hot: false },
+  { name: "1010 Deluxe", desc: "Chill block placement puzzle game", emoji: "&#129521;", url: "https://www.crazygames.com/game/1010-deluxe", cat: "puzzle", age: "all", hot: false },
+  { name: "Hoop Stars", desc: "Basketball slam dunk stacker", emoji: "&#127936;", url: "https://www.crazygames.com/game/hoop-stars", cat: "puzzle", age: "all", hot: false },
+  { name: "Stack Jump", desc: "Stack and jump platforms up forever", emoji: "&#128314;", url: "https://www.crazygames.com/game/stack-jump", cat: "puzzle", age: "all", hot: false },
+  { name: "Ball Blast", desc: "Shoot balls and blast through boulders", emoji: "&#128165;", url: "https://www.crazygames.com/game/ball-blast", cat: "action", age: "all", hot: true },
+  { name: "Bubble Shooter", desc: "Pop color-matched bubble chains", emoji: "&#128308;", url: "https://www.crazygames.com/game/bubble-shooter", cat: "puzzle", age: "all", hot: false },
+  { name: "Zuma Deluxe", desc: "Classic ball-shooting marble game", emoji: "&#128992;", url: "https://www.crazygames.com/game/zuma-deluxe", cat: "puzzle", age: "all", hot: true },
+  { name: "Jewel Burst", desc: "Match and blast jewel combos", emoji: "&#128142;", url: "https://www.crazygames.com/game/jewel-burst", cat: "puzzle", age: "all", hot: false },
+  { name: "Candy Crush Soda", desc: "Sweet match-3 candy levels", emoji: "&#127852;", url: "https://www.crazygames.com/game/candy-crush-soda-saga", cat: "puzzle", age: "all", hot: false },
+  { name: "Mahjong Dimensions", desc: "3D rotating mahjong puzzle", emoji: "&#127183;", url: "https://www.crazygames.com/game/mahjong-dimensions", cat: "puzzle", age: "all", hot: false },
+  { name: "Word Search", desc: "Find hidden words in the grid", emoji: "&#128214;", url: "https://www.crazygames.com/game/word-search", cat: "puzzle", age: "all", hot: false },
+  { name: "Brain Test", desc: "Tricky riddle brain teaser puzzles", emoji: "&#129504;", url: "https://www.crazygames.com/game/brain-test", cat: "puzzle", age: "all", hot: true },
+  { name: "IQ Ball", desc: "Stretch a tentacle to reach the star", emoji: "&#129433;", url: "https://www.crazygames.com/game/iq-ball", cat: "puzzle", age: "all", hot: false },
+  { name: "Where's My Water", desc: "Guide water to Swampy the alligator", emoji: "&#128167;", url: "https://www.crazygames.com/game/wheres-my-water", cat: "puzzle", age: "all", hot: false },
+  { name: "Cargo Bridge", desc: "Build bridges strong enough to hold workers", emoji: "&#128296;", url: "https://www.crazygames.com/game/cargo-bridge", cat: "puzzle", age: "all", hot: false },
+  { name: "Demolition City", desc: "Place explosives to demolish buildings", emoji: "&#128165;", url: "https://www.crazygames.com/game/demolition-city", cat: "puzzle", age: "all", hot: false },
+  { name: "Bomb It 7", desc: "Bomberman style multiplayer mayhem", emoji: "&#128163;", url: "https://www.crazygames.com/game/bomb-it-7", cat: "action", age: "all", hot: true },
+  { name: "Bomb It 6", desc: "Bomb arenas with power-ups", emoji: "&#128163;", url: "https://www.crazygames.com/game/bomb-it-6", cat: "action", age: "all", hot: false },
+  { name: "Uno Online", desc: "Classic Uno card game multiplayer", emoji: "&#127183;", url: "https://www.crazygames.com/game/uno-online", cat: "puzzle", age: "all", hot: true },
+  { name: "8 Ball Pool", desc: "Multiplayer pool against real players", emoji: "&#127921;", url: "https://www.crazygames.com/game/8-ball-pool", cat: "puzzle", age: "all", hot: true },
+  { name: "Checkers", desc: "Classic checkers vs AI or friend", emoji: "&#9824;", url: "https://www.crazygames.com/game/checkers", cat: "puzzle", age: "all", hot: false },
+  { name: "Ludo Club", desc: "Classic Ludo board game online", emoji: "&#127922;", url: "https://www.crazygames.com/game/ludo-club", cat: "puzzle", age: "all", hot: false },
+  { name: "Tic Tac Toe", desc: "Simple online tic tac toe", emoji: "&#10062;", url: "https://www.crazygames.com/game/tic-tac-toe", cat: "puzzle", age: "all", hot: false },
+
+  // MORE PLATFORMERS / ACTION
+  { name: "Super Mario 63", desc: "Fan-made Mario 64 browser port", emoji: "&#127794;", url: "https://www.crazygames.com/game/super-mario-63", cat: "action", age: "all", hot: true },
+  { name: "Mario Combat", desc: "Mario beats up Goombas Street Fighter style", emoji: "&#128081;", url: "https://www.crazygames.com/game/mario-combat", cat: "action", age: "all", hot: false },
+  { name: "Mario Kart Racing", desc: "Browser Mario kart style racer", emoji: "&#127950;", url: "https://www.crazygames.com/game/mario-kart-racing", cat: "racing", age: "all", hot: true },
+  { name: "Sonic the Hedgehog", desc: "Classic Sonic browser platformer", emoji: "&#128038;", url: "https://www.crazygames.com/game/sonic-the-hedgehog", cat: "action", age: "all", hot: true },
+  { name: "Sonic Boom", desc: "Sonic speed platformer challenge", emoji: "&#9889;", url: "https://www.crazygames.com/game/sonic-boom", cat: "action", age: "all", hot: false },
+  { name: "Donkey Kong", desc: "Classic barrel dodging arcade game", emoji: "&#129400;", url: "https://www.crazygames.com/game/donkey-kong", cat: "action", age: "all", hot: false },
+  { name: "Pacman", desc: "The original maze muncher", emoji: "&#128123;", url: "https://www.crazygames.com/game/pacman", cat: "puzzle", age: "all", hot: true },
+  { name: "Ms Pacman", desc: "Ms Pacman classic arcade game", emoji: "&#128025;", url: "https://www.crazygames.com/game/ms-pacman", cat: "puzzle", age: "all", hot: false },
+  { name: "Galaga", desc: "Classic 80s space shooter arcade", emoji: "&#128126;", url: "https://www.crazygames.com/game/galaga", cat: "shooter", age: "all", hot: false },
+  { name: "Space Invaders", desc: "Defend Earth from descending aliens", emoji: "&#128125;", url: "https://www.crazygames.com/game/space-invaders", cat: "shooter", age: "all", hot: false },
+  { name: "Asteroids", desc: "Rotate and shoot asteroid chunks", emoji: "&#9954;", url: "https://www.crazygames.com/game/asteroids", cat: "shooter", age: "all", hot: false },
+  { name: "Frogger", desc: "Help frogger cross the road safely", emoji: "&#128056;", url: "https://www.crazygames.com/game/frogger", cat: "action", age: "all", hot: false },
+  { name: "Pong", desc: "The original two player ping pong", emoji: "&#127992;", url: "https://www.crazygames.com/game/pong", cat: "action", age: "all", hot: false },
+  { name: "Stickman Fighter Epic Battle", desc: "Stickman fighting tournament", emoji: "&#129354;", url: "https://www.crazygames.com/game/stickman-fighter-epic-battle", cat: "action", age: "13+", hot: true },
+  { name: "Stickman Maverick", desc: "Stickman shoots through levels", emoji: "&#128299;", url: "https://www.crazygames.com/game/stickman-maverick", cat: "action", age: "13+", hot: false },
+  { name: "Vex 7", desc: "Deadly obstacle course platformer", emoji: "&#128680;", url: "https://www.crazygames.com/game/vex-7", cat: "action", age: "all", hot: true },
+  { name: "Vex 6", desc: "Intense spike-filled level runner", emoji: "&#128314;", url: "https://www.crazygames.com/game/vex-6", cat: "action", age: "all", hot: false },
+  { name: "Vex 5", desc: "Brutal platformer obstacle gauntlet", emoji: "&#128128;", url: "https://www.crazygames.com/game/vex-5", cat: "action", age: "all", hot: false },
+  { name: "Moto X3M Spooky Land", desc: "Halloween themed bike stunts", emoji: "&#127875;", url: "https://www.crazygames.com/game/moto-x3m-spooky-land", cat: "racing", age: "all", hot: true },
+  { name: "Moto X3M Pool Party", desc: "Summer water park bike stunts", emoji: "&#127946;", url: "https://www.crazygames.com/game/moto-x3m-pool-party", cat: "racing", age: "all", hot: false },
+  { name: "Short Life", desc: "Guide ragdoll through deadly traps", emoji: "&#128128;", url: "https://www.crazygames.com/game/short-life", cat: "gore", age: "13+", hot: true },
+  { name: "Short Life 2", desc: "Even more brutal ragdoll traps", emoji: "&#129657;", url: "https://www.crazygames.com/game/short-life-2", cat: "gore", age: "13+", hot: true },
+  { name: "Elastic Man", desc: "Stretch a face with your cursor", emoji: "&#129488;", url: "https://www.crazygames.com/game/elastic-man", cat: "action", age: "all", hot: true },
+  { name: "Talking Tom", desc: "Poke and play with Talking Tom", emoji: "&#128049;", url: "https://www.crazygames.com/game/talking-tom", cat: "action", age: "all", hot: false },
+  { name: "Kitten Cannonball", desc: "Launch a kitten as far as possible", emoji: "&#128049;", url: "https://www.crazygames.com/game/kitten-cannonball", cat: "action", age: "all", hot: false },
+  { name: "Penguin Massacre", desc: "Defend against waves of penguins", emoji: "&#129419;", url: "https://www.crazygames.com/game/penguin-massacre", cat: "shooter", age: "13+", hot: false },
+  { name: "Redneck Vs Zombies", desc: "Southern style zombie slaying", emoji: "&#129503;", url: "https://www.crazygames.com/game/redneck-vs-zombies", cat: "gore", age: "13+", hot: false },
+  { name: "Monster Truck Soccer", desc: "Monster trucks play soccer", emoji: "&#128665;", url: "https://www.crazygames.com/game/monster-truck-soccer", cat: "action", age: "all", hot: false },
+  { name: "Stickman Army Team Battle", desc: "Command stickman soldiers to victory", emoji: "&#128116;", url: "https://www.crazygames.com/game/stickman-army-team-battle", cat: "action", age: "13+", hot: false },
+  { name: "Cyberchase Shape Quest", desc: "PBS math shape learning game", emoji: "&#128207;", url: "https://www.crazygames.com/game/cyberchase-shape-quest", cat: "puzzle", age: "all", hot: false },
+  { name: "Ultimate Ninja Flash", desc: "Multiplayer ninja brawler flash game", emoji: "&#129354;", url: "https://www.crazygames.com/game/ultimate-ninja-flash", cat: "action", age: "13+", hot: false },
+  { name: "Warlords Heroes", desc: "Medieval hack and slash warrior game", emoji: "&#129504;", url: "https://www.crazygames.com/game/warlords-heroes", cat: "action", age: "13+", hot: true },
+  { name: "Warlords Heroes 2", desc: "Epic war hero sequel with more weapons", emoji: "&#9876;", url: "https://www.crazygames.com/game/warlords-heroes-2", cat: "action", age: "13+", hot: false },
 ];
 
 let currentFilter = 'all';
@@ -426,178 +604,68 @@ function closeGame() {
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeGame(); });
 renderGames(games);
 
-// ===================== DOUGH CURSOR =====================
+// ===================== CYBER CURSOR =====================
 (function() {
   const style = document.createElement('style');
   style.textContent = `
     * { cursor: none !important; }
-    #dough-cursor {
+
+    #cyber-cursor {
       position: fixed;
       pointer-events: none;
       z-index: 999999;
-      width: 64px;
-      height: 64px;
-      transform: translate(-50%, -50%);
-      transition: transform 0.08s ease;
+      width: 20px;
+      height: 20px;
+      transform: translate(0, 0);
       user-select: none;
     }
-    #dough-cursor.clicking {
-      transform: translate(-50%, -50%) scale(0.8) rotate(-12deg) translateX(-6px);
-      animation: flinch 0.25s ease;
+
+    #cyber-cursor svg {
+      filter: drop-shadow(0 0 4px #00ffe0) drop-shadow(0 0 8px #00ffe066);
     }
-    @keyframes flinch {
-      0%   { transform: translate(-50%, -50%) scale(1) rotate(0deg); }
-      30%  { transform: translate(calc(-50% - 8px), calc(-50% - 6px)) scale(0.78) rotate(-15deg); }
-      60%  { transform: translate(calc(-50% + 4px), calc(-50% - 2px)) scale(0.82) rotate(8deg); }
-      100% { transform: translate(-50%, -50%) scale(0.8) rotate(-10deg); }
+
+    #cyber-dot {
+      position: fixed;
+      pointer-events: none;
+      z-index: 999998;
+      width: 5px;
+      height: 5px;
+      background: #00ffe0;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 6px #00ffe0, 0 0 12px #00ffe066;
+      transition: transform 0.1s ease, opacity 0.1s ease;
+    }
+
+    #cyber-dot.clicking {
+      transform: translate(-50%, -50%) scale(2);
+      opacity: 0.5;
     }
   `;
   document.head.appendChild(style);
 
-  const HAPPY_SVG = `<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <!-- Shadow -->
-    <ellipse cx="32" cy="61" rx="22" ry="3" fill="rgba(0,0,0,0.10)"/>
-    <!-- Outer stroke / sticker border -->
-    <circle cx="32" cy="31" r="27" fill="white" stroke="white" stroke-width="4"/>
-    <!-- Main body - golden biscuit -->
-    <circle cx="32" cy="31" r="25" fill="#f0c060"/>
-    <!-- Texture bumps -->
-    <circle cx="20" cy="20" r="3.5" fill="#e8b84a" opacity="0.6"/>
-    <circle cx="42" cy="18" r="2.8" fill="#e8b84a" opacity="0.6"/>
-    <circle cx="14" cy="35" r="2.5" fill="#e8b84a" opacity="0.5"/>
-    <circle cx="48" cy="38" r="3" fill="#e8b84a" opacity="0.5"/>
-    <circle cx="35" cy="48" r="2.2" fill="#e8b84a" opacity="0.5"/>
-    <circle cx="22" cy="46" r="2" fill="#e8b84a" opacity="0.4"/>
-    <circle cx="44" cy="26" r="1.8" fill="#e8b84a" opacity="0.4"/>
-    <!-- Highlight top -->
-    <ellipse cx="26" cy="16" rx="9" ry="5" fill="white" opacity="0.35" transform="rotate(-20,26,16)"/>
-    <!-- Dark outline ring -->
-    <circle cx="32" cy="31" r="25" fill="none" stroke="#5a3010" stroke-width="2.5"/>
-    <!-- Left eye -->
-    <circle cx="22" cy="29" r="4.5" fill="#1a1a1a"/>
-    <circle cx="23.5" cy="27.5" r="1.5" fill="white" opacity="0.9"/>
-    <!-- Right eye -->
-    <circle cx="42" cy="29" r="4.5" fill="#1a1a1a"/>
-    <circle cx="43.5" cy="27.5" r="1.5" fill="white" opacity="0.9"/>
-    <!-- Blush left -->
-    <ellipse cx="16" cy="36" rx="5.5" ry="3.5" fill="#f08080" opacity="0.65"/>
-    <!-- Blush right -->
-    <ellipse cx="48" cy="36" rx="5.5" ry="3.5" fill="#f08080" opacity="0.65"/>
-    <!-- Happy open mouth -->
-    <path d="M23 38 Q32 46 41 38" stroke="#5a3010" stroke-width="2" fill="#c85050" stroke-linecap="round"/>
-    <path d="M23 38 Q32 46 41 38" fill="#c85050"/>
-    <!-- Teeth -->
-    <path d="M26 38 Q32 42 38 38" fill="white" stroke="none"/>
-  </svg>`;
-
-  const SAD_SVG = `<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <!-- Shadow -->
-    <ellipse cx="32" cy="61" rx="22" ry="3" fill="rgba(0,0,0,0.10)"/>
-    <!-- Outer stroke / sticker border -->
-    <circle cx="32" cy="31" r="27" fill="white" stroke="white" stroke-width="4"/>
-    <!-- Main body -->
-    <circle cx="32" cy="31" r="25" fill="#e8b84a"/>
-    <!-- Texture bumps (slightly darker when sad) -->
-    <circle cx="20" cy="20" r="3.5" fill="#d4a030" opacity="0.6"/>
-    <circle cx="42" cy="18" r="2.8" fill="#d4a030" opacity="0.6"/>
-    <circle cx="14" cy="35" r="2.5" fill="#d4a030" opacity="0.5"/>
-    <circle cx="48" cy="38" r="3" fill="#d4a030" opacity="0.5"/>
-    <circle cx="35" cy="48" r="2.2" fill="#d4a030" opacity="0.5"/>
-    <!-- Highlight top -->
-    <ellipse cx="26" cy="16" rx="9" ry="5" fill="white" opacity="0.25" transform="rotate(-20,26,16)"/>
-    <!-- Dark outline ring -->
-    <circle cx="32" cy="31" r="25" fill="none" stroke="#5a3010" stroke-width="2.5"/>
-    <!-- Left eye - scared/squinting X -->
-    <line x1="19" y1="26" x2="25" y2="32" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="25" y1="26" x2="19" y2="32" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
-    <!-- Right eye - scared/squinting X -->
-    <line x1="39" y1="26" x2="45" y2="32" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="45" y1="26" x2="39" y2="32" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
-    <!-- Blush left (bigger when scared) -->
-    <ellipse cx="16" cy="36" rx="6" ry="4" fill="#f08080" opacity="0.75"/>
-    <!-- Blush right -->
-    <ellipse cx="48" cy="36" rx="6" ry="4" fill="#f08080" opacity="0.75"/>
-    <!-- Frown mouth -->
-    <path d="M23 44 Q32 37 41 44" stroke="#5a3010" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-    <!-- Sweat drop -->
-    <ellipse cx="50" cy="20" rx="3" ry="4.5" fill="#7ac8f0" opacity="0.9"/>
-    <ellipse cx="50" cy="16" rx="2" ry="2" fill="#7ac8f0" opacity="0.9"/>
-  </svg>`;
-
+  // Sharp arrow cursor - cyber style
   const cursor = document.createElement('div');
-  cursor.id = 'dough-cursor';
-  cursor.innerHTML = HAPPY_SVG;
+  cursor.id = 'cyber-cursor';
+  cursor.innerHTML = `<svg width="20" height="24" viewBox="0 0 20 24" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="0,0 0,20 5,15 8,23 11,22 8,14 14,14" fill="#00ffe0" stroke="#003830" stroke-width="1" stroke-linejoin="round"/>
+  </svg>`;
   document.body.appendChild(cursor);
 
-  // Particle pool
-  const particles = [];
-  const PARTICLE_COUNT = 20;
-  const EMOJIS = ['✨','💫','⭐','🌟','·','˚'];
-
-  class Particle {
-    constructor() {
-      this.el = document.createElement('div');
-      this.el.style.cssText = 'position:fixed;pointer-events:none;z-index:999998;user-select:none;opacity:0;';
-      document.body.appendChild(this.el);
-      this.active = false;
-    }
-    spawn(x, y) {
-      this.x = x; this.y = y;
-      this.vx = (Math.random() - 0.5) * 4;
-      this.vy = (Math.random() - 0.5) * 4 - 1.5;
-      this.life = 1;
-      this.decay = 0.04 + Math.random() * 0.04;
-      this.size = 10 + Math.random() * 10;
-      this.el.textContent = EMOJIS[Math.floor(Math.random() * EMOJIS.length)];
-      this.el.style.fontSize = this.size + 'px';
-      this.active = true;
-    }
-    update() {
-      if (!this.active) return;
-      this.life -= this.decay;
-      if (this.life <= 0) { this.active = false; this.el.style.opacity = 0; return; }
-      this.x += this.vx; this.y += this.vy; this.vy += 0.1;
-      this.el.style.opacity = this.life;
-      this.el.style.left = (this.x - this.size/2) + 'px';
-      this.el.style.top = (this.y - this.size/2) + 'px';
-    }
-  }
-
-  for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new Particle());
-
-  let mouseX = -200, mouseY = -200, lastSpawn = 0;
+  // Small glowing dot at tip
+  const dot = document.createElement('div');
+  dot.id = 'cyber-dot';
+  document.body.appendChild(dot);
 
   document.addEventListener('mousemove', e => {
-    mouseX = e.clientX; mouseY = e.clientY;
-    cursor.style.left = mouseX + 'px';
-    cursor.style.top = mouseY + 'px';
-    const now = Date.now();
-    if (now - lastSpawn > 40) {
-      lastSpawn = now;
-      const p = particles.find(p => !p.active);
-      if (p) p.spawn(mouseX, mouseY);
-    }
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    dot.style.left = e.clientX + 'px';
+    dot.style.top = e.clientY + 'px';
   });
 
-  document.addEventListener('mousedown', () => {
-    cursor.innerHTML = SAD_SVG;
-    cursor.classList.add('clicking');
-  });
-
-  document.addEventListener('mouseup', () => {
-    cursor.innerHTML = HAPPY_SVG;
-    cursor.classList.remove('clicking');
-    for (let i = 0; i < 7; i++) {
-      const p = particles.find(p => !p.active);
-      if (p) p.spawn(mouseX, mouseY);
-    }
-  });
-
-  function animate() {
-    particles.forEach(p => p.update());
-    requestAnimationFrame(animate);
-  }
-  animate();
+  document.addEventListener('mousedown', () => dot.classList.add('clicking'));
+  document.addEventListener('mouseup', () => dot.classList.remove('clicking'));
 })();
 </script>
 </body>
